@@ -17,7 +17,7 @@ img {
   width: 230px;
   height: 200px;
 }
-#home ,#p {
+#home, #p {
   color: red;
 }
 </style>
