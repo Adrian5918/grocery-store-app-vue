@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#!">Fresher Produce</a>
+        <a class="navbar-brand">Fresher Produce</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -21,17 +21,17 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="/signup">Signup</a></li>
-            <li class="nav-item"><a class="nav-link" href="/signin">Login</a></li>
-            <li class="nav-item"><a class="nav-link" href="/outlog">Logout</a></li>
+            <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="/storesIndex">Local stores</a></li> -->
             
           </ul>
-          <form class="d-flex">
-            <button class="btn btn-outline-dark" type="submit">
-              <i class="bi-cart-fill me-1"></i>
-              Cart
+          
+            <button class="btn btn-outline-dark"><a class="nav-link" href="/ordersIndex">
+              <i class="bi-cart-fill me-1"></i>Cart</a>
               <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
             </button>
-          </form>
+          
         </div>
       </div>
     </nav>

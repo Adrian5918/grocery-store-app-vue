@@ -3,10 +3,7 @@
     <h1> {{ message }} </h1>
     <hr>
     <div v-for="product in products" v-bind:key="product.id">
-    <h1> Item: {{ product.name }} </h1>
-    <h2 id="p"> Price: ${{ product.price }} </h2>
-    <img v-bind:src="product.image_url">
-    <hr>
+    
     </div>
     
     <!-- Section-->
@@ -36,7 +33,7 @@
               <!-- Product actions-->
               <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                 <div class="text-center">
-                  <a class="btn btn-outline-dark mt-auto" href="#"
+                  <a class="btn btn-outline-dark mt-auto" href="#" v-on:click="addItemToCart(product)"
                     >Add to cart</a
                   >
                 </div>
@@ -76,7 +73,7 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      message: "Welcome to all of our Products!",
+      message: "Welcome to all of our Fresh produce!",
       products: [],
     };
   },
@@ -89,6 +86,12 @@ export default {
       axios.get('http://localhost:3000/products').then(response => {
         console.log(response.data);
         this.products = response.data;
+      })
+    },
+    addItemToCart: function(product) {
+      console.log(product)
+      axios.post('http://localhost:3000/carted_products', {product_id: product.id}).then(response => {
+        console.log(response.data);
       })
     }
   },

@@ -4,6 +4,9 @@ import Home from '../views/Home.vue'
 import Signup from '../views/Signup.vue';
 import login from '../views/login.vue';
 import logout from '../views/Logout.vue';
+import cartedProductsIndex from '../views/cartedProductsIndex.vue';
+import ordersIndex from '../views/ordersIndex.vue';
+import storeIndex from '../views/storeIndex.vue';
 
 Vue.use(VueRouter)
 
@@ -17,6 +20,16 @@ const routes = [
     path: "/signup", 
     name: "Signup",
     component: Signup
+  },
+  {
+    path: "/cartedProductsIndex",
+    name: "cartedProductsIndex",
+    component: cartedProductsIndex
+  },
+  {
+    path: "/storeIndex",
+    nane: "storeIndex",
+    component: storeIndex
   },
   {
     path: "/Login",
@@ -35,7 +48,12 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  },
+  {
+    path: '/ordersIndex',
+    name: 'ordersIndex',
+    component: ordersIndex
+  },
 ]
 
 const router = new VueRouter({

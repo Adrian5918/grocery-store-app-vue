@@ -15,5 +15,22 @@
 <style>
 #about, .F {
   color: green;
+  
+}
+
+template, body {
+  background-image: url("https://media.istockphoto.com/photos/fruity-background-picture-id153265706");
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 100% 100%;
+}
+
+h1 {
+  margin-left: 30px;
+}
+h3, h4 {
+  border: solid rgb(11, 235, 11);
+  background-color: rgb(8, 255, 21);
+  
 }
 </style>
