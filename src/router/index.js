@@ -7,7 +7,7 @@ import logout from '../views/Logout.vue';
 import cartedProductsIndex from '../views/cartedProductsIndex.vue';
 import ordersIndex from '../views/ordersIndex.vue';
 import storeIndex from '../views/storeIndex.vue';
-
+import thankYou from '../views/thankYou.vue';
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,6 +15,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/thankYou',
+    name: 'thankYou',
+    component: thankYou
   },
   {
     path: "/signup", 

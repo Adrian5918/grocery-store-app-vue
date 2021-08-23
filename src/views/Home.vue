@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1> {{ message }} </h1>
+    <h1 class="message"> {{ message }} </h1>
     <hr>
     <div v-for="product in products" v-bind:key="product.id">
     
@@ -9,9 +9,7 @@
     <!-- Section-->
     <section class="py-5" 
       <div class="container px-4 px-lg-5 mt-5">
-        <div
-          class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
-        >
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
           <div class="col mb-5" v-for="product in products">
             <div class="card h-100">
               <!-- Product image-->
@@ -21,13 +19,13 @@
                 alt="..."
               />
               <!-- Product details-->
-              <div class="card-body p-4"> {{ product.name }}
+              <div class="name"> {{ product.name }}
                 <div class="text-center">
                   <!-- Product name-->
                   
                   <h5 class="fw-bolder"></h5>
                   <!-- Product price-->
-                  <p> price: ${{ product.price }} </p>
+                  <p class="price"> Price: ${{ product.price }}.00 </p>
                 </div>
               </div>
               <!-- Product actions-->
@@ -63,9 +61,27 @@ img {
   width: 230px;
   height: 200px;
 }
-#home, #p {
+#home, .price {
   color: red;
 }
+#home, .name {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+}
+#home, .card {
+  background-color: rgb(233, 200, 128);
+}
+.home, #body {
+  background-image: linear-gradient(to bottom right, rgb(238, 228, 141), rgb(97, 217, 247), blue);
+}
+h1 {
+  text-align: center;
+  color: limegreen;
+  text-shadow: 2px 2px #ffffff;
+  background: linear-gradient(60deg, rgb(230, 163, 224), rgb(221, 248, 70), cyan);
+}
+
 </style>
 
 <script>

@@ -1,12 +1,13 @@
 <template>
   <div class="order">
-      <h1 class="message"> {{ message }} </h1>
+      <h1 class="messageOrder"> {{ message }} </h1>
     <div v-for="order in orders" v-bind:key="order.id">
+      
       <h2> Order number: #{{ order.id }} </h2>
       <h2> Tax: {{ order.tax }} </h2>
       <h2> Subtotal: {{ order.subtotal }} </h2>
       <h2> total: {{ order.total }} </h2>
-      <button> Place order </button>
+      <button v-on:click="checkout"> Place order </button>
     </div> 
   </div>
 </template>
@@ -16,7 +17,7 @@ img {
   width: 230px;
   height: 200px;
 }
-.message {
+.messageOrder {
   text-align: center;
 }
 </style>
@@ -42,6 +43,13 @@ import axios from "axios";
           this.orders = response.data;
         })
       },
+    },
+    checkout: function() {
+      console.log('checking out')
+      axios.post('http://localhost:3000/orders').then(response => {
+        console.log(response.data);
+        
+      })
     },
   };
 </script>

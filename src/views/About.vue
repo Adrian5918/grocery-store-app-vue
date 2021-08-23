@@ -29,8 +29,16 @@ h1 {
   margin-left: 30px;
 }
 h3, h4 {
-  border: solid rgb(11, 235, 11);
-  background-color: rgb(8, 255, 21);
-  
+  border: solid rgb(0, 0, 0);
+  background-color: rgb(241, 230, 200);
+  width: 400px; 
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  padding: 5px;
+  font-size: 30px;
+}
+h4 {
+  margin-top: 50px;
 }
 </style>

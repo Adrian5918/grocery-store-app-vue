@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import axios from "axios";
+import DigitalClock from "vue-digital-clock";
 
 Vue.config.productionTip = false
 
