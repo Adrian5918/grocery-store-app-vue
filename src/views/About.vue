@@ -30,7 +30,7 @@ h1 {
 }
 h3, h4 {
   border: solid rgb(0, 0, 0);
-  background-color: rgb(241, 230, 200);
+  background-color: rgb(187, 187, 187);
   width: 400px; 
   margin-left: auto;
   margin-right: auto;

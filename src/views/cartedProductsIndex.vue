@@ -33,14 +33,12 @@ import axios from "axios";
     },
     methods: {
       cartIndex: function() {
-        console.log('showing user cart..');
         axios.get('http://localhost:3000/carted_products').then(response => {
           console.log(response.data);
           this.cartedProducts = response.data;
         })
       },
     checkout: function() {
-      console.log('checking out')
       var params = {"user_id": localStorage.user_id}
       axios.post('http://localhost:3000/orders', params).then(response => {
         console.log(response.data);

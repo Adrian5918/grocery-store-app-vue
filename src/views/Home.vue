@@ -42,10 +42,10 @@
       </div>
     </section>
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-auto">
       <div class="container">
-        <p class="m-0 text-center text-white">
-          Copyright &copy; Your Website 2021
+        <p class="m-0 text-center text-black">
+          200 w Blue Island Ave, 60608. Chicago, IL
         </p>
       </div>
     </footer>
@@ -70,10 +70,10 @@ img {
   text-decoration: none;
 }
 #home, .card {
-  background-color: rgb(233, 200, 128);
+  background-color: rgba(255, 246, 246, 0.918);
 }
 .home, #body {
-  background-image: linear-gradient(to bottom right, rgb(238, 228, 141), rgb(97, 217, 247), blue);
+  background-image: linear-gradient(to bottom right, rgb(255, 240, 197), rgb(255, 251, 197), rgb(255, 242, 167));
 }
 h1 {
   text-align: center;

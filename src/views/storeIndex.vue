@@ -16,7 +16,7 @@
 <style>
 .store {
   color: rgb(0, 0, 0);
-  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  background-image: linear-gradient(to right, #f3ddb2, #3E5151);
   font-family:sans-serif;
 }
 .pilsen {
@@ -40,7 +40,6 @@ import axios from "axios";
     },
     methods: {
       storeIndex: function() {
-        console.log('showing local stores');
         axios.get('http://localhost:3000/groceryStores').then(response => {
           console.log(response.data);
           this.stores = response.data;

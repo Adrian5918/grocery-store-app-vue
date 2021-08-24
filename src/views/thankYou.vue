@@ -8,6 +8,7 @@
     <router-link to="/">Home page</router-link>
     </button>
   </div>
+  <button v-
 </template>
 
 <style>
